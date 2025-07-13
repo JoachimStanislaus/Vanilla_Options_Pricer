@@ -34,7 +34,7 @@ Gamma (Γ) - Sensitivity of Delta to the underlying price.
 Theta (Θ) - Sensitivity to Time (Time Decay)
     Change in option price with the passage of one day, assuming everything else is constant
 
-    Usually Negative as Options lose value as expiration approaches especially for long positions 
+    Usually Negative as Options lose value as expiration approaches especially for long positions
 
     Call & Put both have negative theta for long positions. (Does that mean that they have positive theta for short positions?)
 

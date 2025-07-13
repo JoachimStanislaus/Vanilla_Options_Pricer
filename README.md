@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ### Run Backend
 
 ```sh
-PYTHONPATH=. uvicorn src.main:app --reload
+python -m streamlit run main.py
 ```
 
 ### Deactivate the Environment
@@ -56,4 +56,8 @@ PYTHONPATH=. uvicorn src.main:app --reload
 deactivate
 ```
 
-Follow README.md for db to setup db
+### Pip Freeze
+
+```sh
+pip freeze > requirements.txt
+```
