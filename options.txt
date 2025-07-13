@@ -1,0 +1,70 @@
+
+Greeks: Used to measure how sensitive the price of an option is to various factors.
+
+Call Option:
+    Buy: speculation that the price will increase above strike price, buy it to get a "guarantee" on delivery of shares at strike price
+    Sell: akin to getting paid to guarantee delivery of shares at the strike price.
+
+Put Option:
+    Buy: speculation that the price will fall, buy it to "guarantee" liquidity for your holdings / ability to sell your shares at strike price
+    Sell: akin to getting paid to insure against the price falling, "guarantee' purchase of shares at strike price.
+
+Delta (Δ) - Sensitive to underlying price
+    Change in option price for a $1 change in the price of the underlying asset.
+
+    Call Option: Delta ranges from 0-1.
+    Put Option: Delta ranges from -1 to 0
+
+    Eg:
+    A delta of 0.6 means the option price increases by $0.6 if the underlying rises by $1.
+
+    Also represents the hedge ratio:
+    Owning 1 call with delta 0.5 = owning 0.5 shares of the stock.
+
+Gamma (Γ) - Sensitivity of Delta to the underlying price.
+    Rate of change of delta per $1 change in the underlying price
+
+    High near the money, low deep ITM/OTM (in the money / out the money)
+
+    Eg:
+    A gamma of 0.05 means delta will change by 0.05 for each $1 move in the underlying
+
+    Used to manage risk of non-linear exposure (esp in hedging)
+
+Theta (Θ) - Sensitivity to Time (Time Decay)
+    Change in option price with the passage of one day, assuming everything else is constant
+
+    Usually Negative as Options lose value as expiration approaches especially for long positions 
+
+    Call & Put both have negative theta for long positions. (Does that mean that they have positive theta for short positions?)
+
+    Eg:
+    A theta of -0.03 means the option loses 0.03 in value per day.
+
+Vega (ν) - Sensitivity to volatiltiy
+    Change in option price for a 1 percentage point change in implied volatility
+
+    Call & Put both have positive Vega for long positions (Does that mean short positons have negative vega? )
+
+    Eg:
+        A vega of 0.1 means that option price increases by $0.1 if implied volatility increases by 1%.
+
+Rho (ρ) - Sensitivity to interest rate changes
+    Change in option price for a 1% change in the risk-free interest rate.
+
+    Call Options: Positive rho (value increaes as rate rises)
+
+    Put Options: Negative rho (value decreases as rates rise)
+
+    Less important in low-rate environments or short-dated Options
+
+
+
+S0: Current price of the underlying asset
+K: Strike price
+T: Time to maturity (in years)
+r: Risk-free interest rate
+σ: Volatility of the underlying
+N(⋅): CDF of the standard normal distribution
+
+
